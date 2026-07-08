@@ -6,3 +6,6 @@ dist/
 .pnpm-store/
 *.log
 coverage/
+demo-video/*.avi
+demo-video/*.mp4
+demo-video/*.webm

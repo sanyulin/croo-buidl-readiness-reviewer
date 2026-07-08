@@ -110,8 +110,8 @@ async function checkSampleReview(): Promise<Check> {
 
 function nextHumanActions(): string[] {
   return [
-    "Create a public GitHub repository and push this project.",
-    "Record a sub-5-minute demo video after the repository URL is final.",
+    "Keep the public GitHub repository synchronized before final DoraHacks submission.",
+    "Upload the generated sub-5-minute demo video and replace the placeholder URL.",
     "Register the agent and service in CROO Agent Store.",
     "Store CROO_API_KEY only in local .env, then verify Provider and Requester.",
     "Paste the final repository URL and demo video URL into DoraHacks before the deadline."

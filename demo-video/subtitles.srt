@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:18,000
+This is BUIDL Readiness Reviewer, a CROO developer tooling agent for hackathon submissions.
+
+2
+00:00:18,000 --> 00:00:42,000
+The problem is simple: builders can have working code but still miss required submission evidence.
+
+3
+00:00:42,000 --> 00:01:08,000
+The result is a structured ReviewReport that turns submission rules into clear next actions.
+
+4
+00:01:08,000 --> 00:01:32,000
+The public GitHub repository contains the README, license, source code, submission copy, and logo.
+
+5
+00:01:32,000 --> 00:02:16,000
+The local commands are pnpm build, pnpm pre-submit, and pnpm demo.
+
+6
+00:02:16,000 --> 00:02:56,000
+The output makes it obvious what is ready and what still needs evidence.
+
+7
+00:02:56,000 --> 00:03:34,000
+The service layer is separated so it can be wired into the CROO provider SDK callback.
+
+8
+00:03:34,000 --> 00:04:08,000
+The demo uses placeholders only. Real keys are never pasted into chat, code, screenshots, or the video.
+
+9
+00:04:08,000 --> 00:04:32,000
+The current video is honest: local demo ready, provider template prepared, live CAP evidence still pending.
+
+10
+00:04:32,000 --> 00:04:50,000
+BUIDL Readiness Reviewer helps CROO builders turn submission requirements into a clear, callable review.

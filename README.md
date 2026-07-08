@@ -62,10 +62,10 @@ node dist/cli.js --fetch examples/sample-input.json
 
 ```json
 {
-  "repoUrl": "https://github.com/example/croo-buidl-readiness-reviewer",
+  "repoUrl": "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
   "track": "developer_tooling",
   "projectSummary": "A CROO developer tooling agent that checks whether a hackathon BUIDL has the core assets required for DoraHacks submission.",
-  "demoVideoUrl": "https://youtu.be/demo-placeholder",
+  "demoVideoUrl": "https://youtu.be/replace-with-final-demo-url",
   "capIntegrationStatus": "template_ready",
   "listedOnCrooStore": false
 }
