@@ -51,7 +51,7 @@ What is already feasible:
 
 - Public GitHub submission package.
 - Public repository URL: https://github.com/sanyulin/croo-buidl-readiness-reviewer.
-- Sub-5-minute demo video URL: https://youtu.be/3pQYEvp0a8Q.
+- Sub-5-minute demo video URL: https://youtu.be/2pDs31dVGZs.
 - CLI demo and local judge walkthrough.
 - Developer Tooling Agent positioning.
 - CROO service metadata and input/output schemas.

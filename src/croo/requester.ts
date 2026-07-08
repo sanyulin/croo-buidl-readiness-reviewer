@@ -38,7 +38,7 @@ function localRequesterInput(): ReviewInput {
     projectSummary:
       process.env.CROO_REVIEW_PROJECT_SUMMARY ??
       "A CROO developer tooling agent that reviews whether hackathon BUIDLs are ready for DoraHacks submission, including repository, README, license, demo, CAP evidence, and Agent Store readiness.",
-    demoVideoUrl: process.env.CROO_REVIEW_DEMO_VIDEO_URL ?? "https://youtu.be/3pQYEvp0a8Q",
+    demoVideoUrl: process.env.CROO_REVIEW_DEMO_VIDEO_URL ?? "https://youtu.be/2pDs31dVGZs",
     capIntegrationStatus: "requester_verified",
     listedOnCrooStore: true
   };

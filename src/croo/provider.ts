@@ -45,7 +45,7 @@ function serviceMetadata(): Record<string, unknown> {
         repoUrl: "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
         track: "developer_tooling",
         projectSummary: "A CROO developer tooling agent for BUIDL submission readiness.",
-        demoVideoUrl: "https://youtu.be/3pQYEvp0a8Q"
+        demoVideoUrl: "https://youtu.be/2pDs31dVGZs"
       }
     }
   };

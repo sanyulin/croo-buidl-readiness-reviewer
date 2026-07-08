@@ -65,7 +65,7 @@ node dist/cli.js --fetch examples/sample-input.json
   "repoUrl": "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
   "track": "developer_tooling",
   "projectSummary": "A CROO developer tooling agent that checks whether a hackathon BUIDL has the core assets required for DoraHacks submission.",
-  "demoVideoUrl": "https://youtu.be/3pQYEvp0a8Q",
+  "demoVideoUrl": "https://youtu.be/2pDs31dVGZs",
   "capIntegrationStatus": "template_ready",
   "listedOnCrooStore": false
 }
@@ -133,7 +133,7 @@ The public GitHub package and sub-5-minute demo video are ready. Final prize eli
 - Verify Provider Online and Requester call evidence.
 - Submit the final GitHub and demo video links to DoraHacks.
 
-Demo video: https://youtu.be/3pQYEvp0a8Q
+Demo video: https://youtu.be/2pDs31dVGZs
 
 See `submission/feasibility.md` for the full feasibility review.
 

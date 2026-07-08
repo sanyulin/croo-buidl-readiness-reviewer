@@ -59,7 +59,7 @@ https://github.com/sanyulin/croo-buidl-readiness-reviewer
 
 ## Demo Video
 
-https://youtu.be/3pQYEvp0a8Q
+https://youtu.be/2pDs31dVGZs
 
 ## License
 
