@@ -149,6 +149,14 @@ function collectBlockers(input: ReviewInput, repoSignals: RepoSignals): string[]
     blockers.push("CAP integration has not started. At minimum, include the provider/requester template and integration notes.");
   }
 
+  if (input.capIntegrationStatus === "template_ready") {
+    blockers.push("CAP integration is template-ready only. Final submission still needs Provider online or Requester verification evidence.");
+  }
+
+  if (input.capIntegrationStatus === "provider_online") {
+    blockers.push("Provider is online, but Requester verification evidence is still missing.");
+  }
+
   if (!input.listedOnCrooStore) {
     blockers.push("Agent is not marked as listed on CROO Agent Store yet.");
   }
@@ -163,12 +171,16 @@ function collectQuickFixes(input: ReviewInput, repoSignals: RepoSignals): string
     fixes.push("Create a public GitHub repository and use its HTTPS URL in the DoraHacks BUIDL form.");
   }
 
-  if (repoSignals.hasReadme === false || repoSignals.hasReadme === undefined) {
+  if (repoSignals.hasReadme === false) {
     fixes.push("Add a README with quick start, service input/output, CROO setup, and demo steps.");
   }
 
-  if (repoSignals.hasLicense === false || repoSignals.hasLicense === undefined) {
+  if (repoSignals.hasLicense === false) {
     fixes.push("Add an MIT or Apache 2.0 license file at the repository root.");
+  }
+
+  if (repoSignals.hasReadme === undefined || repoSignals.hasLicense === undefined) {
+    fixes.push("After the repository is public, run the CLI with --fetch to verify README and license metadata through GitHub.");
   }
 
   if (!input.demoVideoUrl) {
@@ -177,6 +189,7 @@ function collectQuickFixes(input: ReviewInput, repoSignals: RepoSignals): string
 
   if (input.capIntegrationStatus !== "requester_verified" && input.capIntegrationStatus !== "store_listed") {
     fixes.push("After creating the Agent in CROO Dashboard, put CROO_SDK_KEY in local .env and run Provider/Requester verification.");
+    fixes.push("Capture evidence that the Provider is Online and that a Requester can call the service.");
   }
 
   if (!input.listedOnCrooStore) {
@@ -203,6 +216,10 @@ function calculateScore(input: ReviewInput, repoSignals: RepoSignals, blockers: 
   if (input.capIntegrationStatus === "provider_online") score += 14;
   if (input.capIntegrationStatus === "requester_verified") score += 20;
   if (input.capIntegrationStatus === "store_listed" || input.listedOnCrooStore) score += 24;
+
+  if (repoSignals.hasReadme === undefined || repoSignals.hasLicense === undefined) {
+    score = Math.min(score, 94);
+  }
 
   if (blockers.length > 0) {
     score = Math.min(score, 92 - blockers.length * 6);
@@ -236,6 +253,7 @@ function buildCapIntegrationNotes(input: ReviewInput): string[] {
     "Use output fields: score, blockers, quickFixes, submissionChecklist, capIntegrationNotes, demoScript.",
     "Run pnpm build, then run pnpm croo:provider after .env is configured.",
     "Use a second requester agent and CROO_TARGET_SERVICE_ID to verify agent-to-agent calling.",
+    "For final DoraHacks submission, include proof that the service is callable through CROO, not only a local template.",
     `Current local CAP status is ${input.capIntegrationStatus}.`
   ];
 }

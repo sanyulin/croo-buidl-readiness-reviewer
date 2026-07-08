@@ -16,6 +16,7 @@ Run:
 
 ```bash
 pnpm build
+pnpm pre-submit
 pnpm demo
 ```
 
@@ -58,6 +59,8 @@ pnpm croo:requester
 ```
 
 If the official SDK is not installed yet, show the template instructions and local simulation output.
+
+For the final submitted video, replace the simulation with CROO Dashboard proof: Provider Online and Requester call evidence.
 
 ## 4:00 - Why It Helps CROO
 

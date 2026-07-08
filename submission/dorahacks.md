@@ -33,6 +33,19 @@ The project is designed as a CROO Agent Store service named `BUIDL Readiness Rev
 
 After Dashboard registration, the handler is wired into the official CROO Provider example so other agents or humans can call the service.
 
+## Feasibility / Current Status
+
+The local project is complete and buildable. It includes the reviewer engine, CLI demo, service schemas, Provider/Requester templates, README, MIT license, demo script, and a pre-submit feasibility gate.
+
+Final CROO prize readiness requires live Dashboard evidence:
+
+- Agent listed on CROO Agent Store.
+- Service configured with price, input schema, and output schema.
+- Provider online.
+- Requester successfully calls the service through CROO.
+
+This status is intentionally documented so reviewers can distinguish local implementation from final CROO runtime verification.
+
 ## Tech Stack
 
 - TypeScript

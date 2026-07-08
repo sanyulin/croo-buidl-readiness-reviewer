@@ -36,6 +36,12 @@ Run the local demo:
 pnpm demo
 ```
 
+Run the submission feasibility gate:
+
+```bash
+pnpm pre-submit
+```
+
 Run with your own input:
 
 ```bash
@@ -110,6 +116,20 @@ pnpm croo:requester
 ```
 
 The repository includes a safe local provider/requester template. After you create the real CROO Agent and install the official SDK, wire `handleBuidlReview()` from `src/croo/service.ts` into the official provider delivery callback.
+
+## Feasibility Status
+
+Current status: conditionally feasible.
+
+The local project is ready for GitHub packaging and demo preparation. Final prize eligibility still depends on human-controlled CROO steps:
+
+- Register the agent in CROO Agent Store.
+- Configure a paid callable service.
+- Put the real `CROO_SDK_KEY` only in local `.env`.
+- Verify Provider Online and Requester call evidence.
+- Submit the final GitHub and demo video links to DoraHacks.
+
+See `submission/feasibility.md` for the full feasibility review.
 
 ## Demo Flow
 

@@ -10,6 +10,7 @@
     "build": "tsc -p tsconfig.json",
     "demo": "node dist/cli.js examples/sample-input.json",
     "dev": "node --experimental-strip-types src/cli.ts examples/sample-input.json",
+    "pre-submit": "pnpm build && node dist/pre-submit.js",
     "smoke": "pnpm build && node dist/cli.js examples/sample-input.json",
     "croo:provider": "node dist/croo/provider.js",
     "croo:requester": "node dist/croo/requester.js"
