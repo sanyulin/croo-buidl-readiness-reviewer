@@ -2,7 +2,7 @@
   "repoUrl": "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
   "track": "developer_tooling",
   "projectSummary": "A CROO developer tooling agent that checks whether a hackathon BUIDL has the core assets required for DoraHacks submission: public repo, open-source license, demo video, README, CAP integration notes, and a clean pitch.",
-  "demoVideoUrl": "https://youtu.be/replace-with-final-demo-url",
+  "demoVideoUrl": "https://youtu.be/3pQYEvp0a8Q",
   "capIntegrationStatus": "template_ready",
   "listedOnCrooStore": false
 }

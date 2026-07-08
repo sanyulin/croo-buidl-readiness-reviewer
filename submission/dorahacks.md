@@ -55,11 +55,11 @@ This status is intentionally documented so reviewers can distinguish local imple
 
 ## Repository
 
-TODO: paste public GitHub repository URL.
+https://github.com/sanyulin/croo-buidl-readiness-reviewer
 
 ## Demo Video
 
-TODO: paste sub-5-minute demo video URL.
+https://youtu.be/3pQYEvp0a8Q
 
 ## License
 

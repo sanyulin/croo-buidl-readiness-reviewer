@@ -50,6 +50,8 @@ Quality gate:
 What is already feasible:
 
 - Public GitHub submission package.
+- Public repository URL: https://github.com/sanyulin/croo-buidl-readiness-reviewer.
+- Sub-5-minute demo video URL: https://youtu.be/3pQYEvp0a8Q.
 - CLI demo and local judge walkthrough.
 - Developer Tooling Agent positioning.
 - CROO service metadata and input/output schemas.
@@ -58,8 +60,7 @@ What is already feasible:
 
 What still needs human action:
 
-- Create the public GitHub repo.
-- Record and upload a sub-5-minute demo video.
+- Verify the demo video link in a private or logged-out browser window.
 - Register the agent in CROO Agent Store.
 - Add the service name, price, description, input schema, and output schema in the Dashboard.
 - Put the real CROO API key in local `.env`.

@@ -65,7 +65,7 @@ node dist/cli.js --fetch examples/sample-input.json
   "repoUrl": "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
   "track": "developer_tooling",
   "projectSummary": "A CROO developer tooling agent that checks whether a hackathon BUIDL has the core assets required for DoraHacks submission.",
-  "demoVideoUrl": "https://youtu.be/replace-with-final-demo-url",
+  "demoVideoUrl": "https://youtu.be/3pQYEvp0a8Q",
   "capIntegrationStatus": "template_ready",
   "listedOnCrooStore": false
 }
@@ -125,13 +125,15 @@ The repository includes a safe local provider/requester template. After you crea
 
 Current status: conditionally feasible.
 
-The local project is ready for GitHub packaging and demo preparation. Final prize eligibility still depends on human-controlled CROO steps:
+The public GitHub package and sub-5-minute demo video are ready. Final prize eligibility still depends on human-controlled CROO steps:
 
 - Register the agent in CROO Agent Store.
 - Configure a paid callable service.
 - Put the real `CROO_API_KEY` only in local `.env`.
 - Verify Provider Online and Requester call evidence.
 - Submit the final GitHub and demo video links to DoraHacks.
+
+Demo video: https://youtu.be/3pQYEvp0a8Q
 
 See `submission/feasibility.md` for the full feasibility review.
 

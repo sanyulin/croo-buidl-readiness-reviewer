@@ -33,12 +33,12 @@ async function main(): Promise<void> {
 
 function localRequesterInput(): ReviewInput {
   return {
-    repoUrl: process.env.CROO_REVIEW_REPO_URL ?? "https://github.com/example/croo-buidl-readiness-reviewer",
+    repoUrl: process.env.CROO_REVIEW_REPO_URL ?? "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
     track: "developer_tooling",
     projectSummary:
       process.env.CROO_REVIEW_PROJECT_SUMMARY ??
       "A CROO developer tooling agent that reviews whether hackathon BUIDLs are ready for DoraHacks submission, including repository, README, license, demo, CAP evidence, and Agent Store readiness.",
-    demoVideoUrl: process.env.CROO_REVIEW_DEMO_VIDEO_URL ?? "https://youtu.be/demo-placeholder",
+    demoVideoUrl: process.env.CROO_REVIEW_DEMO_VIDEO_URL ?? "https://youtu.be/3pQYEvp0a8Q",
     capIntegrationStatus: "requester_verified",
     listedOnCrooStore: true
   };

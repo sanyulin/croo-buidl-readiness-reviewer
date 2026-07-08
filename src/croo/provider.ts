@@ -42,10 +42,10 @@ function serviceMetadata(): Record<string, unknown> {
     outputSchema: SERVICE_OUTPUT_SCHEMA,
     handlerExample: {
       input: {
-        repoUrl: "https://github.com/example/croo-buidl-readiness-reviewer",
+        repoUrl: "https://github.com/sanyulin/croo-buidl-readiness-reviewer",
         track: "developer_tooling",
         projectSummary: "A CROO developer tooling agent for BUIDL submission readiness.",
-        demoVideoUrl: "https://youtu.be/demo-placeholder"
+        demoVideoUrl: "https://youtu.be/3pQYEvp0a8Q"
       }
     }
   };
