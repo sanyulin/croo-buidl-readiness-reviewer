@@ -62,7 +62,7 @@ What still needs human action:
 - Record and upload a sub-5-minute demo video.
 - Register the agent in CROO Agent Store.
 - Add the service name, price, description, input schema, and output schema in the Dashboard.
-- Put the real CROO SDK key in local `.env`.
+- Put the real CROO API key in local `.env`.
 - Verify Provider Online and Requester call evidence.
 - Paste final repository and demo video links into DoraHacks.
 

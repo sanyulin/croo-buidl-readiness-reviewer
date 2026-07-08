@@ -188,7 +188,7 @@ function collectQuickFixes(input: ReviewInput, repoSignals: RepoSignals): string
   }
 
   if (input.capIntegrationStatus !== "requester_verified" && input.capIntegrationStatus !== "store_listed") {
-    fixes.push("After creating the Agent in CROO Dashboard, put CROO_SDK_KEY in local .env and run Provider/Requester verification.");
+    fixes.push("After creating the Agent in CROO Dashboard, put CROO_API_KEY in local .env and run Provider/Requester verification.");
     fixes.push("Capture evidence that the Provider is Online and that a Requester can call the service.");
   }
 
@@ -247,7 +247,7 @@ function buildSubmissionChecklist(input: ReviewInput, repoSignals: RepoSignals):
 function buildCapIntegrationNotes(input: ReviewInput): string[] {
   return [
     "Create a CROO account at agent.croo.network.",
-    "Register this agent and copy the CROO SDK key once; store it only in local .env.",
+    "Register this agent and copy the CROO API key once; store it only in local .env.",
     "Configure one paid service named BUIDL Readiness Reviewer.",
     "Use input fields: repoUrl, projectSummary, demoVideoUrl, track.",
     "Use output fields: score, blockers, quickFixes, submissionChecklist, capIntegrationNotes, demoScript.",
@@ -266,7 +266,7 @@ function buildDemoScript(input: ReviewInput, score: number): string {
     `0:30 - Solution: BUIDL Readiness Reviewer checks a project and returns a readiness score. Current sample score: ${score}.`,
     `1:15 - Input: repoUrl=${input.repoUrl || "<repo-url>"}, track=${input.track ?? "developer_tooling"}, demoVideoUrl=${input.demoVideoUrl ?? "<demo-url>"}.`,
     `2:00 - Agent output: blockers, quick fixes, submission checklist, CAP integration notes, and a generated demo script. Project summary: ${summary}`,
-    "3:00 - CROO path: register agent, configure service, set CROO_SDK_KEY in .env, run provider, then verify with requester.",
+    "3:00 - CROO path: register agent, configure service, set CROO_API_KEY in .env, run provider, then verify with requester.",
     "4:15 - Closing: the agent helps teams ship cleaner BUIDLs and gives CROO a reusable developer tooling service for hackathon participants."
   ].join("\n");
 }

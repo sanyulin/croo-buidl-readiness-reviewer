@@ -4,7 +4,7 @@ export function readCrooConfig(env: NodeJS.ProcessEnv = process.env): CrooRuntim
   return {
     apiUrl: env.CROO_API_URL ?? "https://api.croo.network",
     wsUrl: env.CROO_WS_URL ?? "wss://api.croo.network/ws",
-    sdkKey: env.CROO_SDK_KEY ?? "",
+    sdkKey: env.CROO_API_KEY ?? env.CROO_SDK_KEY ?? "",
     targetServiceId: env.CROO_TARGET_SERVICE_ID
   };
 }
@@ -13,7 +13,7 @@ export function validateProviderConfig(config: CrooRuntimeConfig): string[] {
   const errors: string[] = [];
 
   if (!config.sdkKey || config.sdkKey.includes("replace")) {
-    errors.push("CROO_SDK_KEY is missing. Create an Agent in CROO Dashboard and store its key in local .env.");
+    errors.push("CROO_API_KEY is missing. Create an Agent in CROO Dashboard and store its key in local .env.");
   }
 
   if (!config.apiUrl.startsWith("https://")) {

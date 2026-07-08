@@ -98,7 +98,7 @@ Copy `.env.example` to `.env` locally and fill values from the Dashboard. Do not
 ```bash
 CROO_API_URL=https://api.croo.network
 CROO_WS_URL=wss://api.croo.network/ws
-CROO_SDK_KEY=croo_sk_replace_with_dashboard_key
+CROO_API_KEY=croo_sk_replace_with_dashboard_key
 CROO_TARGET_SERVICE_ID=replace_with_target_service_id
 ```
 
@@ -125,7 +125,7 @@ The local project is ready for GitHub packaging and demo preparation. Final priz
 
 - Register the agent in CROO Agent Store.
 - Configure a paid callable service.
-- Put the real `CROO_SDK_KEY` only in local `.env`.
+- Put the real `CROO_API_KEY` only in local `.env`.
 - Verify Provider Online and Requester call evidence.
 - Submit the final GitHub and demo video links to DoraHacks.
 

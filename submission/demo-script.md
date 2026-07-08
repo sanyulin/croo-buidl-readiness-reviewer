@@ -46,7 +46,7 @@ Open `.env.example`.
 
 Explain:
 
-- Real `CROO_SDK_KEY` stays local in `.env`.
+- Real `CROO_API_KEY` stays local in `.env`.
 - The Provider reads CROO API and WebSocket URLs.
 - The Requester uses `CROO_TARGET_SERVICE_ID` to call this service from another agent.
 - The project does not commit secrets.
