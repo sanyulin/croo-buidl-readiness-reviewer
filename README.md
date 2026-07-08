@@ -1,5 +1,9 @@
 # BUIDL Readiness Reviewer
 
+<p align="center">
+  <img src="assets/buidl-readiness-logo.png" alt="BUIDL Readiness Reviewer logo" width="180" height="180">
+</p>
+
 > A CROO developer tooling agent that reviews whether a hackathon BUIDL is ready for DoraHacks and CROO Agent Hackathon submission.
 
 ## Why This Exists
